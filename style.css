@@ -260,7 +260,7 @@ h2{
 /*flip card*/
 .fourArchitectures{
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 .containerOne{
     width: 25%;
@@ -1195,18 +1195,231 @@ h2{
     font-size: 16px;
     text-align: end;
 }
-
+.contactDetails2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+.hambuger{
+    display: none;
+}
+.closeimage{
+    display: none;
+}
 /*mobile*/
 @media screen and (max-width:500px){
-    .gridLayout{
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    .heroSection, .head ,  .aboutUs,.workingIcons,.gridLayout{
+        display: block;
     }
-             .logo{
-                margin-left: 0;
-             }
-             .logoName{
-                display: inline-block;
-             }
+.fourArchitectures{
+    display: block;
+    flex-wrap: wrap;
+    margin-left: 40px;
+
+}
+.hambuger{
+    display: block;
+}
+
+.closeimage{
+    display: none;
+}
+.content{
+    display: none;
+}
+.closeimage{
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.welcome{
+    margin-top: 80px;
+    padding-top: 15px;
+}
+.extendmore{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-left: 0;
+}
+  .hambuger{
+    padding-top: 20px;
+    padding-right: 10px;
+  }
+    .heroSectionImage{
+        display: none;
+    }
+    .learnMoreTwo{
+        width: 40%;
+        margin-left: 30%;
+    }
+    .aboutUsImage{
+        width: 100%;
+    }
+    .aboutUsContent{
+        width: 100%;
+    }
+    .faqImage{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    }
+    .faqContent{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+    .formImage{
+        width: 100%;
+    }
+    .formValueFive{
+        width: 99%;
+    }
+    .mobileflex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .formValueFour ,.formValueThree{
+        width: 47%;
+    }
+    .formValueOne ,.formValueTwo{
+        width: 47%;
+    }
+    .formValueSix{
+        width: 99%;
+    }
+    .logo img{
+       width: 100px;
+    }
+    .logoName{
+        left: 0;
+    }
+    .aboutUsContent{
+        margin-top: 30px;
+    }
+    .workingIcons{
+        margin-top: 30px;
+    }
+    .box{
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .faqName{
+        margin-top: 40px;
+    }
+    .contactDetails{
+       padding-top: 20px;
+        width: 100%;
+        display: block;
+        padding-left: 30px;
+    }
+    .contactDetails h3 img{
+        display: none;
+    }
+    .contactDetails2{
+        gap: 30px;
+    }
+    .usefulLinks h3{
+        margin-top: 0;
+    }
+   
+    .followUs h3{
+        margin-top: 0;
+    }
+     .home::after, .architectures::after,.about::after,.reviews::after,.contact::after,.faq::after{
+        display: none;
+     }
+}
+
+
+/* ipad code  */
+@media (min-width:700px) and (max-width:850px){
+    .heroSection{
+        display: block;
+    }
+    .heroSectionContent{
+        width: 100%;
+    }
+    .heroSectionImage{
+        padding-top: 0;
+        margin-top: 0;
+        width: 250px;
+        height: 300px;
+    }
+    .aboutUs{
+        display: block;
+    }
+    .aboutUsImage{
+        width: 100%;
+        position: relative;
+    }
+    .aboutUsContent{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .learnMoreOne{
+        margin-bottom: 0;
+    }
+   #HOME .bgColor{
+        height: 1000px;
+    }
+ .welcome{
+    margin-top: 150px;
+ }
+ .containerThree{
+    display: none;
+ }
+ .workingIcons{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ #ARCHITECTURES .gridLayout{
+    width: 100%;
+ }
+ .fourArchitectures{
+    margin-left: 30px;
+}
+.faqImage{
+    display:none;
+}
+.faqContent{
+    display: block;
+    width: 100%;
+}
+.formImage{
+    height: 300px;
+    margin-top: 50px;
+}
+.formValueOne,.formValueTwo{
+    width: 44%;
+}
+.formValueThree , .formValueFour{
+    width: 44%;
+}
+.learnMoreTwo{
+    width: 20%;
+    margin-left: 320px;
+}
+.logo img ,h5{
+    display: none;
+}
+.content {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+}
+.content li a{
+     padding-left:0;
+
+}
+.home::after ,.architectures::after,.about::after,.reviews::after,.faq::after,.contact::after{
+    left: 0;
+}
+.home::after{
+    width: 150%;
+}
+.about::after{
+    width: 70px;
+}
 }
